@@ -25,7 +25,7 @@ public class LoginPage {
 	 public WebElement getPassword() { return
 	 password; }
 	 
-	 public void signOn() { signOn.click(); }
+	 public void clickOnSignOn() { signOn.click(); }
 	 
 
 }

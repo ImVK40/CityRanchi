@@ -6,8 +6,11 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Base {
 
@@ -31,6 +34,20 @@ public class Base {
 		return driver;
 	}
 	
-	//public void waitForElement()
+	public void waitForElementToClick(WebElement element) {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+		
+	}
 	
+	public void waitForElementToSendData(WebElement element, String value) {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		String data = value;
+		wait.until(ExpectedConditions.elementToBeClickable(element)).sendKeys(data);
+		
+	}
+	
+	public void closeBrowser() {
+		driver.close();
+	}
 }
