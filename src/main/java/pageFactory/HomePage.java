@@ -21,7 +21,7 @@ public class HomePage {
 	@FindBy (xpath = "*//input[@id=\"email\"]") private WebElement runDate;
 	@FindBy (xpath = "*//input[@id=\"email\"]") private WebElement selectionsButton;
 	@FindBy (xpath = "*//input[@id=\"email\"]") private WebElement allSelections;
-	@FindBy (xpath = "*//input[@id=\"email\"]") private WebElement dateFiled; //value random
+	@FindBy (xpath = "*//input[@id=\"email\"]") private WebElement dateField; //value random
 	@FindBy (xpath = "*//input[@id=\"email\"]") private WebElement saveButton;
 	@FindBy (xpath = "*//input[@id=\"email\"]") private WebElement saveReport;
 	@FindBy (xpath = "*//input[@id=\"email\"]") private WebElement saveAndRun;
@@ -85,8 +85,8 @@ public class HomePage {
 		allSelections.click();
 	}
 	
-	public WebElement getDateFiled() {
-		return dateFiled;
+	public WebElement getDateField() {
+		return dateField;
 	}
 	
 	public void clickOnSaveButton() {

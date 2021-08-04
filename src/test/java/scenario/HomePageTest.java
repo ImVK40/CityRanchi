@@ -38,7 +38,7 @@ public class HomePageTest extends Base{
 		homePage.clickOnRunDate();
 		homePage.clickOnSelectionsButton();
 		homePage.clickOnAllSelections();
-		homePage.getDateFiled().sendKeys(properties.getProperty("Date_Field"));
+		homePage.getDateField().sendKeys(properties.getProperty("Date_Field"));
 		homePage.clickOnSaveButton();
 		homePage.clickOnSaveReport();
 		homePage.clickOnSaveAndRun();
